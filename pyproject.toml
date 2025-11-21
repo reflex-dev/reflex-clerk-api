@@ -71,4 +71,5 @@ dev = [
     "ruff>=0.9.10",
     "semver>=3.0.4",
     "reflex==0.7.5",  # https://github.com/reflex-dev/reflex/issues/5114 -- Pinned until this is fixed
+    "hatchling>=1.27.0",
 ]
