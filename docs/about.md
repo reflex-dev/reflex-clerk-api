@@ -35,7 +35,7 @@ This packages:
 - Provides helper functions for handling `on_load` events that require knowledge of user authentication status.
 - Allows registration of event handlers to be called on authentication changes (login/logout).
 - Is fully typed
-- Is tested against python versions 3.10 - 3.13
+- Is tested against python versions 3.11 - 3.13
 
 ## Demo
 

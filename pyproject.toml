@@ -19,7 +19,7 @@ name = "reflex-clerk-api"
 description = "Reflex custom component wrapping @clerk/clerk-react and integrating the clerk-backend-api"
 readme = "README.md"
 license = "Apache-2.0"
-requires-python = ">=3.10"
+requires-python = ">=3.11"
 authors = [{ name = "Tim Child", email = "timjchild@gmail.com" }]
 keywords = ["reflex","reflex-custom-components", "clerk", "clerk-backend-api"]
 dynamic = ["version"]
@@ -33,7 +33,6 @@ dependencies = [
 classifiers = [
     "Development Status :: 4 - Beta",
     "Typing :: Typed",
-    "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
     "Programming Language :: Python :: 3.13",
