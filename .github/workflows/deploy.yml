@@ -5,6 +5,7 @@ on:
     workflows: ["Publish"]
     types:
       - completed
+  workflow_dispatch:
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -13,7 +14,8 @@ concurrency:
 jobs:
   deploy-frontend:
     runs-on: ubuntu-latest
-    if: ${{ github.event.workflow_run.conclusion == 'success' && github.repository == 'TimChild/reflex-clerk-api' }}
+    # If previous workflow was successful or this was triggered manually
+    if: ${{ github.event.workflow_run.conclusion == 'success' && github.repository == 'TimChild/reflex-clerk-api' }} || github.event_name == 'workflow_dispatch'
     environment:
       name: demo
     permissions:
