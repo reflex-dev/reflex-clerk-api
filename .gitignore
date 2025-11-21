@@ -7,3 +7,4 @@ site/
 .states/
 playwright_test_error.png
 .idea
+custom_components/reflex_clerk_api/*.pyi
