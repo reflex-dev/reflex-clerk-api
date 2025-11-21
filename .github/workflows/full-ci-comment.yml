@@ -41,8 +41,9 @@ jobs:
 
   comment-result:
     needs: [trigger-check, full-ci]
-    if: always()
     runs-on: ubuntu-latest
+    # if the trigger-check job ran (i.e., the comment was valid)
+    if: needs.trigger-check.result != 'skipped'
     steps:
       - name: Comment on PR
         uses: actions/github-script@v7
