@@ -75,7 +75,8 @@ tasks:
         msg: "PYPI_TOKEN is not set -- Add PYPI_TOKEN=... to .env file"
     cmds:
       - echo "Publishing to PyPI"
-      - uv run reflex component build
+      # - uv run reflex component build  # Until https://github.com/reflex-dev/reflex/issues/5114 is resolved
+      - uvx reflex==0.7.5 component build
       - uv publish --token $PYPI_TOKEN
 
   manual-publish-docs:
