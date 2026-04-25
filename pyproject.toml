@@ -47,6 +47,7 @@ homepage = "https://reflex-clerk-api-demo.adventuresoftim.com"
 
 [tool.pytest.ini_options]
 # addopts = "--headed"
+pythonpath = ["custom_components"]
 
 [tool.pyright]
 venvPath = "."
