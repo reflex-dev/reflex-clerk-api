@@ -18,6 +18,12 @@ from .control_components import (
     signed_in,
     signed_out,
 )
+from .organization_components import (
+    create_organization,
+    organization_list,
+    organization_profile,
+    organization_switcher,
+)
 from .pages import add_sign_in_page, add_sign_up_page
 from .unstyled_components import (
     SignInButton,
@@ -36,7 +42,11 @@ __all__ = [
     "clerk_loaded",
     "clerk_loading",
     "clerk_provider",
+    "create_organization",
     "on_load",
+    "organization_list",
+    "organization_profile",
+    "organization_switcher",
     "protect",
     "redirect_to_user_profile",
     "register_on_auth_change_handler",
